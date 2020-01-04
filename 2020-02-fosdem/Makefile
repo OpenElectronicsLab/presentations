@@ -2,8 +2,8 @@ VIEWER=evince
 
 default: pdf
 
-pdf: outline.md
-	pandoc outline.md -o outline.pdf -t beamer
+pdf: clean outline.md
+	pandoc --latex-engine=xelatex outline.md -o outline.pdf -t beamer
 
 check: pdf
 	$(VIEWER) outline.pdf
