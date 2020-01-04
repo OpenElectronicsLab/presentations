@@ -11,7 +11,7 @@
  - through-hole with 1 64pin QFP
  - 2011-11-26 begin desgin
  - 2012-01-23 boards arrive
-     - ![2012 board](http://logicgate.nl/eric/dload/eeg-mouse_rev_0.0-DSC00681.jpg)
+     - ![2012 board](../photos/eeg-mouse_rev_0.0-DSC00681.jpg)
      - populated 2012 rev0 board
  - 2012-03-04 reading data
 
@@ -46,7 +46,7 @@
 # Surface mount is not something to be scared of
 - great video examples on the net
 - Do not fear the green wire fix, cutting traces
-    - [broken-pin-green-wire](http://logicgate.nl/eric/kms15-shield-broken-pin-GreenwireZoomOut.jpg)
+    - ![broken-pin-green-wire](../photos/kms15-shield-broken-pin-GreenwireZoomOut.jpg)
     - [fix PWRDWN and RESET: tie HIGH not LOW. D'oh!](https://github.com/OpenElectronicsLab/OpenHardwareExG_Shield/commit/507f61efbbbc3e7b2749c49335f21cd2c08a47c7)
 
 ## 0201 on the ActiveElectrode
