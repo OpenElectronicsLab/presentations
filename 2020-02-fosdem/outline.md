@@ -1,9 +1,13 @@
-# Our journey
+% OpenElectronicsLab: Our Journey
+% Ace Medlock, Kendrick Shaw, Eric Herman
+% 2020-02-01
 
 # Who we are
+<!-- https://rmarkdown.rstudio.com/authoring_pandoc_markdown.html%23raw-tex#presentations -->
 - Ace Medlock
 - Kendrick Shaw
 - Eric Herman
+
 ## in 2011, we didn't have these credentials
 - Ace & Kendrick were graduate students
 
