@@ -57,9 +57,9 @@
 - Picture
 
 # testing
-- big board was hard to test - getting a working board was hard; we now know 
+- big board was hard to test - getting a working board was hard; we now know
 - we need to build testing into the design for bigger boards but we haven't mastered this skill yet. (Our current board is just smaller, and we didn't hand-solder it :) )
-- Picture of testing harness for ExG_Shield? Just a picture of big board?
+- Picture of testing harness for ExG\_Shield? Just a picture of big board?
 
 # Safety is important, and not that hard!
 
@@ -108,6 +108,15 @@
 # certification (ongoing)
 - EC medical device regulation is currently changing (2020) and we don't really know the process yet
 - Need to design for safety from the start: Plan to do a ground-up redesign with eye on certification once we're happy with the prototype
+
+# Take home message
+- a little thought about safety goes a long way
+- great tools and resources to support you
+- don't be too intimidated
+	- try
+	- repeat
+	- you'll improve as you go
+- happy hardware hacking!
 
 # References and Contacts
 
