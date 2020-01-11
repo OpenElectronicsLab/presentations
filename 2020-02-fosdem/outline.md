@@ -25,18 +25,18 @@
 
 
 # ExG Version 1
+[https://github.com/OpenElectronicsLab/OpenHardwareExG](https://github.com/OpenElectronicsLab/OpenHardwareExG)
 - 3 boards stacked, but testing of base-board hard
-- example usage: eeg-mouse
-  TODO: link stuff
+- example usage: [http://openelectronicslab.github.io/eeg-mouse/](http://openelectronicslab.github.io/eeg-mouse/)
 
 # ExG Shield
-TODO: link to repo
+[https://github.com/OpenElectronicsLab/OpenHardwareExG\_Shield](https://github.com/OpenElectronicsLab/OpenHardwareExG_Shield)
 - designed testing, cheaper and easier for others
 - made some errors and three different revs
 - example usage: quantified self
 
 # Holter Monitor
-TODO: link to repo
+[https://github.com/OpenElectronicsLab/OpenHardwareHolterMonitor](https://github.com/OpenElectronicsLab/OpenHardwareHolterMonitor)
 - asked for advice from Humatem and received some great guidance
 - special purpose
 - goal of certification
@@ -94,10 +94,12 @@ one of the things was safety
 <!-- end Ace -->
 
 # Safety is important, and often fairly simple
+<!--
+https://en.wikipedia.org/wiki/Goggles#/media/File:Your_Quota_Two_eyes_that_see_Protect_them_2012_002_7217_xg94hq433_crop.tiff
+(public domain from 1955 in USA, originally published without copyright notice)
+-->
+![goggles](../photos/Your_Quota_Two_eyes_that_see_Protect_them.png)
 
-TODO: stock safety photo (goggles?), maybe:
-
-[goggles](https://en.wikipedia.org/wiki/Goggles#/media/File:Your_Quota_Two_eyes_that_see_Protect_them_2012_002_7217_xg94hq433_crop.tiff)
 
 <!-- Ace hands floor to KMS -->
 
@@ -107,10 +109,11 @@ TODO: stock safety photo (goggles?), maybe:
 - How likely is it
 - Risk = severity * probability
 - Iterate design until risk is acceptable
-
-# Sometimes a high level of risk is acceptable
-  - TODO Stock mad science photo
-  - e.g. Defibrillator
+  - freeclimbing
+  <!-- moderate levels of risk more acceptable for yourself -->
+  <!-- freeclimbing photo, not safe, but that can be an okay choice -->
+  - Sometimes a high level of risk is acceptable
+    - e.g. Defibrillator
 
 # Risk of electrical shock
 - Small currents can be dangerous when crossing the heart
@@ -119,18 +122,30 @@ TODO: stock safety photo (goggles?), maybe:
     - Minimum fibrilation currents
     - Resistances can be very low in a medical context
       - central lines, surgery, etc.
-- TODO Figure with patient and heart in circuit
-
-# Leakage current standards
-- TODO Table
-- TODO Isolated, body float, cardiac float symbols
+<!-- MAYBE Figure with patient and heart in circuit -->
 
 # Isolation
 - Batteries (Safety Extra Low Voltage, or SELV)
     - e.g.: unplugged laptop
-- Creepage and clearance TODO: figure
+- Creepage and clearance
+  ![Creepage vs clearance](../photos/Creepage_vs_clearance.png)
 - Power isolation
 - Data isolation
+
+# Leakage current standards
+
+--------------------------------------------------------------------
+Leakage Current    Body            Body Floating   Cardiac Floating
+----------------- --------------- --------------- ------------------
+Earth              500 $\mu$A      500 $\mu$A       500 $\mu$A
+
+Enclosure          100 $\mu$A      100 $\mu$A       100 $\mu$A
+
+Patient            100 $\mu$A      100 $\mu$A        10 $\mu$A
+--------------------------------------------------------------------
+
+- Can only be 2-5 times larger even if component fails
+<!-- MAYBE Isolated, body float, cardiac float symbols -->
 
 # Designing for failures
 - Safe if any one component fails
