@@ -11,32 +11,44 @@
 ## in 2011, we didn't have these credentials
 - Ace & Kendrick were graduate students
 
-# ExG Version 0
+# ADS1290 breakout
  - through-hole with 1 64pin QFP
  - 2011-11-26 begin desgin
  - 2012-01-23 boards arrive
-     - ![2012 board](../photos/eeg-mouse_rev_0.0-DSC00681.jpg)
      - populated 2012 rev0 board
  - 2012-03-04 reading data
+
+[https://github.com/OpenElectronicsLab/ads1298-breakout](https://github.com/OpenElectronicsLab/ads1298-breakout)
+
+# ExG v0 Pix
+![2012 board](../photos/eeg-mouse_rev_0.0-DSC00681.jpg)
+
 
 # ExG Version 1
 - 3 boards stacked, but testing of base-board hard
 - example usage: eeg-mouse
+  TODO: link stuff
 
 # ExG Shield
+TODO: link to repo
 - designed testing, cheaper and easier for others
 - made some errors and three different revs
+- example usage: quantified self
 
 # Holter Monitor
+TODO: link to repo
+- asked for advice from Humatem and received some great guidance
 - special purpose
 - goal of certification
+	- EC medical device regulation is currently changing (2020) and we don't really know the process yet
+	- Need to design for safety from the start: Plan to do a ground-up redesign with eye on certification once we're happy with the prototype
 
+# Many excellent FOSS tools to support hardware hackers
+- for both hardware and firmware
+- Arduino-type boards and tools lower the barrier to entry
 
 # Arduino build environment
 - Picture
-
-# lower barriers, FOSS tools are great
-- Arduino-type boards lower the barrier to entry
 
 # KiCAD
 - schematic picture
@@ -46,6 +58,24 @@
 
 # OpenSCAD
 - Picture
+
+<!-- pass floor to Ace -->
+<!--
+Learn to Surface mount
+hand solder, with one chip
+youtube to learn
+noise -> should go surface mount
+let's just to SMD
+Big board with solder paste
+issues with solder paste, cold joints
+Iron under the scope
+- kinda ugly
+- purpose is electrical connection, not pretty solder
+Makes are still easy to make, but correctable
+pix of green wire fixes and descriptions
+learned a lot along the way
+one of the things was safety
+-->
 
 # Surface mount is not something to be scared of
 - great video examples on the net
@@ -61,7 +91,15 @@
 - we need to build testing into the design for bigger boards but we haven't mastered this skill yet. (Our current board is just smaller, and we didn't hand-solder it :) )
 - Picture of testing harness for ExG\_Shield? Just a picture of big board?
 
-# Safety is important, and not that hard!
+<!-- end Ace -->
+
+# Safety is important, and often fairly simple
+
+TODO: stock safety photo (goggles?), maybe:
+
+[goggles](https://en.wikipedia.org/wiki/Goggles#/media/File:Your_Quota_Two_eyes_that_see_Protect_them_2012_002_7217_xg94hq433_crop.tiff)
+
+<!-- Ace hands floor to KMS -->
 
 # General concepts
 - What could go wrong?
@@ -71,43 +109,35 @@
 - Iterate design until risk is acceptable
 
 # Sometimes a high level of risk is acceptable
-  - Stock mad science photo
+  - TODO Stock mad science photo
   - e.g. Defibrillator
 
-# Leakage currents
-- Crossing the heart
+# Risk of electrical shock
+- Small currents can be dangerous when crossing the heart
 - Current rather than voltage
     - Pacemaker voltages (~2 volts)
     - Minimum fibrilation currents
-- Figure with patient and heart in circuit
-
-# More risks in medical environment
- - Stock photo (central line X-ray?)
- - unconscious/disabled patients (unable to withdraw)
- - spills/injuries
- - central lines
+    - Resistances can be very low in a medical context
+      - central lines, surgery, etc.
+- TODO Figure with patient and heart in circuit
 
 # Leakage current standards
-- Table
-- Isolated, body float, cardiac float symbols
+- TODO Table
+- TODO Isolated, body float, cardiac float symbols
 
 # Isolation
-- Batteries (SELV)
+- Batteries (Safety Extra Low Voltage, or SELV)
     - e.g.: unplugged laptop
+- Creepage and clearance TODO: figure
 - Power isolation
 - Data isolation
-- Creepage and clearance
 
 # Designing for failures
+- Safe if any one component fails
 - 2 means of patient protection
     - two layers of basic isolation
       vs. reinforced isolation
-- Safe if any one component fails
-- Protection resistors
-
-# certification (ongoing)
-- EC medical device regulation is currently changing (2020) and we don't really know the process yet
-- Need to design for safety from the start: Plan to do a ground-up redesign with eye on certification once we're happy with the prototype
+- Current limiting resistors on patient connections
 
 # Take home message
 - a little thought about safety goes a long way
