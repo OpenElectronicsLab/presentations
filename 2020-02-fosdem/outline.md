@@ -11,32 +11,44 @@
 ## in 2011, we didn't have these credentials
 - Ace & Kendrick were graduate students
 
-# ExG Version 0
+# ADS1290 breakout
  - through-hole with 1 64pin QFP
  - 2011-11-26 begin desgin
  - 2012-01-23 boards arrive
-     - ![2012 board](../photos/eeg-mouse_rev_0.0-DSC00681.jpg)
      - populated 2012 rev0 board
  - 2012-03-04 reading data
 
+[https://github.com/OpenElectronicsLab/ads1298-breakout](https://github.com/OpenElectronicsLab/ads1298-breakout)
+
+# ExG v0 Pix
+![2012 board](../photos/eeg-mouse_rev_0.0-DSC00681.jpg)
+
+
 # ExG Version 1
+[https://github.com/OpenElectronicsLab/OpenHardwareExG](https://github.com/OpenElectronicsLab/OpenHardwareExG)
 - 3 boards stacked, but testing of base-board hard
-- example usage: eeg-mouse
+- example usage: [http://openelectronicslab.github.io/eeg-mouse/](http://openelectronicslab.github.io/eeg-mouse/)
 
 # ExG Shield
+[https://github.com/OpenElectronicsLab/OpenHardwareExG\_Shield](https://github.com/OpenElectronicsLab/OpenHardwareExG_Shield)
 - designed testing, cheaper and easier for others
 - made some errors and three different revs
+- example usage: quantified self
 
 # Holter Monitor
+[https://github.com/OpenElectronicsLab/OpenHardwareHolterMonitor](https://github.com/OpenElectronicsLab/OpenHardwareHolterMonitor)
+- asked for advice from Humatem and received some great guidance
 - special purpose
 - goal of certification
+	- EC medical device regulation is currently changing (2020) and we don't really know the process yet
+	- Need to design for safety from the start: Plan to do a ground-up redesign with eye on certification once we're happy with the prototype
 
+# Many excellent FOSS tools to support hardware hackers
+- for both hardware and firmware
+- Arduino-type boards and tools lower the barrier to entry
 
 # Arduino build environment
 - Picture
-
-# lower barriers, FOSS tools are great
-- Arduino-type boards lower the barrier to entry
 
 # KiCAD
 - schematic picture
@@ -47,6 +59,23 @@
 # OpenSCAD
 - Picture
 
+<!-- pass floor to Ace -->
+<!--
+Learn to Surface mount
+hand solder, with one chip
+youtube to learn
+noise -> should go surface mount
+let's just to SMD
+Big board with solder paste
+issues with solder paste, cold joints
+Iron under the scope
+- kinda ugly
+- purpose is electrical connection, not pretty solder
+Makes are still easy to make, but correctable
+pix of green wire fixes and descriptions
+learned a lot along the way
+one of the things was safety
+-->
 # Learning surface mount soldering
 ![2012 board](../photos/REV0CHIP)
 *rev0: through-hole except the chip*
@@ -136,7 +165,17 @@ We felt like our first board had too much noise for what we wanted to do, so in 
 - Picture of testing harness for ExG_Shield? Just a picture of big board?
 -->
 
-# Safety is important, and not that hard!
+<!-- end Ace -->
+
+# Safety is important, and often fairly simple
+<!--
+https://en.wikipedia.org/wiki/Goggles#/media/File:Your_Quota_Two_eyes_that_see_Protect_them_2012_002_7217_xg94hq433_crop.tiff
+(public domain from 1955 in USA, originally published without copyright notice)
+-->
+![goggles](../photos/Your_Quota_Two_eyes_that_see_Protect_them.png)
+
+
+<!-- Ace hands floor to KMS -->
 
 # General concepts
 - What could go wrong?
@@ -144,45 +183,59 @@ We felt like our first board had too much noise for what we wanted to do, so in 
 - How likely is it
 - Risk = severity * probability
 - Iterate design until risk is acceptable
+  - freeclimbing
+  <!-- moderate levels of risk more acceptable for yourself -->
+  <!-- freeclimbing photo, not safe, but that can be an okay choice -->
+  - Sometimes a high level of risk is acceptable
+    - e.g. Defibrillator
 
-# Sometimes a high level of risk is acceptable
-  - Stock mad science photo
-  - e.g. Defibrillator
-
-# Leakage currents
-- Crossing the heart
+# Risk of electrical shock
+- Small currents can be dangerous when crossing the heart
 - Current rather than voltage
     - Pacemaker voltages (~2 volts)
     - Minimum fibrilation currents
-- Figure with patient and heart in circuit
-
-# More risks in medical environment
- - Stock photo (central line X-ray?)
- - unconscious/disabled patients (unable to withdraw)
- - spills/injuries
- - central lines
-
-# Leakage current standards
-- Table
-- Isolated, body float, cardiac float symbols
+    - Resistances can be very low in a medical context
+      - central lines, surgery, etc.
+<!-- MAYBE Figure with patient and heart in circuit -->
 
 # Isolation
-- Batteries (SELV)
+- Batteries (Safety Extra Low Voltage, or SELV)
     - e.g.: unplugged laptop
+- Creepage and clearance
+  ![Creepage vs clearance](../photos/Creepage_vs_clearance.png)
 - Power isolation
 - Data isolation
-- Creepage and clearance
+
+# Leakage current standards
+
+--------------------------------------------------------------------
+Leakage Current    Body            Body Floating   Cardiac Floating
+----------------- --------------- --------------- ------------------
+Earth              500 $\mu$A      500 $\mu$A       500 $\mu$A
+
+Enclosure          100 $\mu$A      100 $\mu$A       100 $\mu$A
+
+Patient            100 $\mu$A      100 $\mu$A        10 $\mu$A
+--------------------------------------------------------------------
+
+- Can only be 2-5 times larger even if component fails
+<!-- MAYBE Isolated, body float, cardiac float symbols -->
 
 # Designing for failures
+- Safe if any one component fails
 - 2 means of patient protection
     - two layers of basic isolation
       vs. reinforced isolation
-- Safe if any one component fails
-- Protection resistors
+- Current limiting resistors on patient connections
 
-# certification (ongoing)
-- EC medical device regulation is currently changing (2020) and we don't really know the process yet
-- Need to design for safety from the start: Plan to do a ground-up redesign with eye on certification once we're happy with the prototype
+# Take home message
+- a little thought about safety goes a long way
+- great tools and resources to support you
+- don't be too intimidated
+	- try
+	- repeat
+	- you'll improve as you go
+- happy hardware hacking!
 
 # References and Contacts
 
