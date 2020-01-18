@@ -2,16 +2,13 @@
 % Ace Medlock, Kendrick Shaw, Eric Herman
 % 2020-02-01
 
-# Who we are
+# OpenElectronicsLab
 <!-- https://rmarkdown.rstudio.com/authoring_pandoc_markdown.html%23raw-tex#presentations -->
-- Ace Medlock
-- Kendrick Shaw
-- Eric Herman
-
-## in 2011, we didn't have these credentials
-- Ace & Kendrick were graduate students
+![Eric Herman, Kendrick Shaw, Ace Medlock](../photos/openElectronicsLab_groupPhoto.jpg)
 
 # ADS1290 breakout
+![2012 board](../photos/eeg-mouse_rev_0.0-DSC00681.jpg){ width=50% }
+
  - through-hole with 1 64pin QFP
  - 2011-11-26 begin desgin
  - 2012-01-23 boards arrive
@@ -20,41 +17,36 @@
 
 [https://github.com/OpenElectronicsLab/ads1298-breakout](https://github.com/OpenElectronicsLab/ads1298-breakout)
 
-# ExG v0 Pix
-![2012 board](../photos/eeg-mouse_rev_0.0-DSC00681.jpg)
-
-
 # ExG Version 1
-[https://github.com/OpenElectronicsLab/OpenHardwareExG](https://github.com/OpenElectronicsLab/OpenHardwareExG)
+![OpenHardwareExG in the case](../photos/OpenHardwareExG-rev1-in-case.800.jpg){ width=50% }
 
 - 3 boards stacked, but testing of base-board hard
 - example usage: [http://openelectronicslab.github.io/eeg-mouse/](http://openelectronicslab.github.io/eeg-mouse/)
 
-# ExG v1 in the case
-![OpenHardwareExG-rev1-in-case.800.jpg](../photos/OpenHardwareExG-rev1-in-case.800.jpg)
+[https://github.com/OpenElectronicsLab/OpenHardwareExG](https://github.com/OpenElectronicsLab/OpenHardwareExG)
 
 # ExG Shield
-[https://github.com/OpenElectronicsLab/OpenHardwareExG\_Shield](https://github.com/OpenElectronicsLab/OpenHardwareExG_Shield)
+![OpenHardwareExG Shield](../photos/openhardware-exg-shield.jpg){ width=50% }
 
 - designed testing, cheaper and easier for others
 - made some errors and three different revs
 - example usage: quantified self
 
-# ExG Shield mounted
-![OpenHardwareExG Shield](../photos/openhardware-exg-shield.jpg)
+[https://github.com/OpenElectronicsLab/OpenHardwareExG\_Shield](https://github.com/OpenElectronicsLab/OpenHardwareExG_Shield)
 
-# Holter Monitor
-[https://github.com/OpenElectronicsLab/OpenHardwareHolterMonitor](https://github.com/OpenElectronicsLab/OpenHardwareHolterMonitor)
+# Current Project: Holter Monitor
 
 - asked for advice from Humatem and received some great guidance
 - special purpose
-- goal of certification
+- goal of FDA or EC certification
 	- EC medical device regulation is currently changing (2020) and we don't really know the process yet
 	- Need to design for safety from the start: Plan to do a ground-up redesign with eye on certification once we're happy with the prototype
 
 # Many excellent FOSS tools to support hardware hackers
 - for both hardware and firmware
 - Arduino-type boards and tools lower the barrier to entry
+
+[https://github.com/OpenElectronicsLab/OpenHardwareHolterMonitor](https://github.com/OpenElectronicsLab/OpenHardwareHolterMonitor)
 
 # KiCAD eeschema
 ![kicad-eeschema-screenshot.png](../photos/kicad-eeschema-screenshot.png)
@@ -249,13 +241,21 @@ Patient            100 $\mu$A      100 $\mu$A        10 $\mu$A
 
 # References and Contacts
 
-- Books and references
-     - The Art of Electronics, Horowitz and Hill
-     - Medical Instrumentation Aplication and Design, Webster
-     - SMD Soldering techniques:
+- Tools
+	- https://www.arduino.cc/
+	- https://kicad-pcb.org/
+	- https://www.openscad.org/
+
+- Books
+	- The Art of Electronics, Horowitz and Hill
+	- Medical Instrumentation Aplication and Design, Webster
+
+- SMD Soldering technique videos
 	- https://www.youtube.com/watch?v=eg2hxpy--gg
 	- https://www.youtube.com/watch?v=JKqgU2Hw3mY
 
 - Contact
-    - github
-    - email addresses
+	- https://github.com/OpenElectronicsLab
+	- eric.herman@gmail.com
+	- ace.medlock@gmail.com
+	- kms15@case.edu
