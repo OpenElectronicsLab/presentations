@@ -132,7 +132,7 @@ We felt like our first board had too much noise for what we wanted to do, so in 
 - The job of a solder joint is to conduct electricity, not to look pretty
 <!-- Using this method does not result in pretty solder joints. But the job of a solder joint is to conduct electricity, not to look pretty. -->
 
-![ugly, but works](../photos/uglyHandSolder.jpg)
+![ugly, but works](../photos/uglyHandSolder.jpg){ width=75% }
 
 # Hand-soldering surface mount
 <!-- You can even do an 0201 package - I refer to these as breathably small components. -->
@@ -150,7 +150,7 @@ We felt like our first board had too much noise for what we wanted to do, so in 
 - You will make mistakes. You will be able to fix them.
 <!-- So we just picked it up, rotated it, and stuck it back down. -->
 
-![rotated Q10](../photos/rotatedPart.jpg)
+![rotated Q10](../photos/rotatedPart.jpg){ width=75% }
 
 # Fixing mistakes
 <!-- But that wasn't the worst error on this board - Q1-Q2 had pin 1 and 2 reversed. This was my solution - turn the component 180 degrees and greenwire pin 3 to its pad. We also needed to add a couple resistors that we forgot. -->
@@ -158,6 +158,7 @@ We felt like our first board had too much noise for what we wanted to do, so in 
 
 # Fixing mistakes
 <!-- So what if you put a trace where you shouldn't have one? Well, you can just get a razor blade and cut it... provided you have a two-layer board. Or you can try lifting the foot of the IC up off the pad... -->
+
 ![cut traces](../photos/cutTrace.jpg)
 
 # Fixing mistakes
@@ -251,7 +252,9 @@ Patient            100 $\mu$A      100 $\mu$A        10 $\mu$A
 - Books and references
      - The Art of Electronics, Horowitz and Hill
      - Medical Instrumentation Aplication and Design, Webster
-     - Texas Lude Man: https://www.youtube.com/watch?v=eg2hxpy--gg
+     - SMD Soldering techniques:
+	- https://www.youtube.com/watch?v=eg2hxpy--gg
+	- https://www.youtube.com/watch?v=JKqgU2Hw3mY
 
 - Contact
     - github
