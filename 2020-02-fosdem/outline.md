@@ -64,22 +64,7 @@
 ![openscad-screenshot.png](../photos/openscad-screenshot.png)
 
 <!-- pass floor to Ace -->
-<!--
-Learn to Surface mount
-hand solder, with one chip
-youtube to learn
-noise -> should go surface mount
-let's just to SMD
-Big board with solder paste
-issues with solder paste, cold joints
-Iron under the scope
-- kinda ugly
-- purpose is electrical connection, not pretty solder
-Makes are still easy to make, but correctable
-pix of green wire fixes and descriptions
-learned a lot along the way
-one of the things was safety
--->
+
 # Learning surface mount soldering
 ![rev0: through-hole except the chip](../photos/REV0CHIP.jpg)
 
@@ -121,6 +106,40 @@ We felt like our first board had too much noise for what we wanted to do, so in 
 ![using a microscope for soldering](../photos/aceSolderingScope.jpg)
 
 # Hand-soldering surface mount
+<!-- The way I usually do it is to position the component, then get a little glob of solder on the tip of the iron. -->
+![hand solder 01](../photos/handSolder01.jpg)
+
+# Hand-soldering surface mount
+<!-- Then use the glob to conduct the heat between the iron, pad, and component -->
+![hand solder 02](../photos/handSolder02.jpg)
+
+# Hand-soldering surface mount
+<!-- Apply the solder -->
+![hand solder 03](../photos/handSolder03.jpg)
+
+# Hand-soldering surface mount
+<!-- Here I'm cheating and using the solder itself to hold down the component while I pull the iron away, so it doesn't yank the component with it. -->
+![hand solder 04](../photos/handSolder04.jpg)
+
+# Hand-soldering surface mount
+<!-- and there we are -->
+![hand solder 05](../photos/handSolder05.jpg)
+
+# Hand-soldering surface mount
+<!-- Here's the other side. -->
+![hand solder 06](../photos/handSolder06.jpg)
+
+# Hand-soldering surface mount
+![hand solder 07](../photos/handSolder07.jpg)
+
+# Hand-soldering surface mount
+![hand solder 08](../photos/handSolder08.jpg)
+
+# Hand-soldering surface mount
+<!-- This one's not quite as pretty. -->
+![hand solder 09](../photos/handSolder09.jpg)
+
+# Hand-soldering surface mount
 - The job of a solder joint is to conduct electricity, not to look pretty
 <!-- Using this method does not result in pretty solder joints. But the job of a solder joint is to conduct electricity, not to look pretty. -->
 
@@ -158,13 +177,7 @@ We felt like our first board had too much noise for what we wanted to do, so in 
 -->
 ![green wire into the chip](../photos/kms15-shield-broken-pin-GreenwireZoomOut.jpg)
 
-
-
-<!-- May or may not mention Testing:
-# testing
-- big board was hard to test - getting a working board was hard; we now know 
-- we need to build testing into the design for bigger boards but we haven't mastered this skill yet. (Our current board is just smaller, and we didn't hand-solder it :) )
-- Picture of testing harness for ExG_Shield? Just a picture of big board?
+<!-- We've learned a lot along the way; one of the things we've learned about is safety, which Kendrick will talk to you about.
 -->
 
 <!-- end Ace -->
