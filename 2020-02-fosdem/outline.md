@@ -26,17 +26,26 @@
 
 # ExG Version 1
 [https://github.com/OpenElectronicsLab/OpenHardwareExG](https://github.com/OpenElectronicsLab/OpenHardwareExG)
+
 - 3 boards stacked, but testing of base-board hard
 - example usage: [http://openelectronicslab.github.io/eeg-mouse/](http://openelectronicslab.github.io/eeg-mouse/)
 
+# ExG v1 in the case
+![OpenHardwareExG-rev1-in-case.800.jpg](../photos/OpenHardwareExG-rev1-in-case.800.jpg)
+
 # ExG Shield
 [https://github.com/OpenElectronicsLab/OpenHardwareExG\_Shield](https://github.com/OpenElectronicsLab/OpenHardwareExG_Shield)
+
 - designed testing, cheaper and easier for others
 - made some errors and three different revs
 - example usage: quantified self
 
+# ExG Shield mounted
+![OpenHardwareExG Shield](../photos/openhardware-exg-shield.jpg)
+
 # Holter Monitor
 [https://github.com/OpenElectronicsLab/OpenHardwareHolterMonitor](https://github.com/OpenElectronicsLab/OpenHardwareHolterMonitor)
+
 - asked for advice from Humatem and received some great guidance
 - special purpose
 - goal of certification
