@@ -47,9 +47,6 @@
 - for both hardware and firmware
 - Arduino-type boards and tools lower the barrier to entry
 
-# Arduino build environment
-![arduino-build-screenshot.png](../photos/arduino-build-screenshot.png)
-
 # KiCAD eeschema
 ![kicad-eeschema-screenshot.png](../photos/kicad-eeschema-screenshot.png)
 
@@ -57,6 +54,10 @@
 ![kicad-pcbnew-screenshot.png](../photos/kicad-pcbnew-screenshot.png)
 
 # Populated PCB
+![populated-holtermonitor.jpg](../photos/populated-holtermonitor.jpg)
+
+# Arduino build environment
+![arduino-build-screenshot.png](../photos/arduino-build-screenshot.png)
 
 # OpenSCAD
 ![openscad-screenshot.png](../photos/openscad-screenshot.png)
@@ -91,8 +92,7 @@ one of the things was safety
 We felt like our first board had too much noise for what we wanted to do, so in our second design we focused on reducing noise - and that meant making the leap to all surface-mount components. -->
 
 # Learning surface mount soldering
-![surface mount 0603](../photos/surfaceMountTiny.jpg)
-*0603 surface mount resistor*
+![0603 surface mount resistor](../photos/surfaceMountTiny.jpg)
 <!-- surface mount components are tiny -->
 
 # Solder paste
@@ -137,26 +137,26 @@ We felt like our first board had too much noise for what we wanted to do, so in 
 <!-- You can even do an 0201 package - I refer to these as breathably small components. -->
 
 # Fixing misteaks
-![rotated part](../photos/q10Wrong_unannotated)
+![rotated part](../photos/q10Wrong_unannotated.jpg)
 <!-- One thing that is really good about learning to work with surface mount is that you learn that you don't have to be afraid of mistakes. And you will make mistakes - especially if you're working in the evenings and weekends like we do, sometimes with long breaks between. -->
 
 # Fixing misteaks
-![rotated part](../photos/q10Wrong_annotated)
+![rotated part](../photos/q10Wrong_annotated.jpg)
 <!-- The problem here was we got the wrong footprint: The pads are DGS, the feet are GSD -->
 
 # Fixing mistakes
 - You will make mistakes. You will be able to fix them.
-![rotated part](../photos/rotatedPart)
+![rotated part](../photos/rotatedPart.jpg)
 *rotated Q10*
 <!-- So we just picked it up, rotated it, and stuck it back down. -->
 
 # Fixing mistakes
-![rotated Q1-Q2](../photos/Q1-Q2)
+![rotated Q1-Q2](../photos/Q1-Q2.jpg)
 *flipped Q1-Q2*
 <!-- But that wasn't the worst error on this board - Q1-Q2 had pin 1 and 2 reversed. This was my solution - turn the component 180 degrees and greenwire pin 3 to its pad. We also needed to add a couple resistors that we forgot. -->
 
 # Fixing mistakes
-![cut traces](../photos/cutTrace)
+![cut traces](../photos/cutTrace.jpg)
 *cut traces*
 <!-- So what if you put a trace where you shouldn't have one? Well, you can just get a razor blade and cut it... provided you have a two-layer board. Or you can try lifting the foot of the IC up off the pad... -->
 
