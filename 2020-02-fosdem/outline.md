@@ -80,61 +80,54 @@ learned a lot along the way
 one of the things was safety
 -->
 # Learning surface mount soldering
-![2012 board](../photos/REV0CHIP.jpg)
-*rev0: through-hole except the chip*
-<!-- our first board was through-hole soldered, except the chip. -->
+![rev0: through-hole except the chip](../photos/REV0CHIP.jpg)
 
 # Learning surface mount soldering
 - "Pin sweep" method of soldering ICs
 - I learned it by watching YouTube!
-![YouTube](../photos/youTubeSolderICs.jpg)
 <!-- At first we were intimidated by the tiny feet, but after watching some YouTube videos we were willing to give it a try - and it worked!
 We felt like our first board had too much noise for what we wanted to do, so in our second design we focused on reducing noise - and that meant making the leap to all surface-mount components. -->
+![YouTube](../photos/youTubeSolderICs.jpg)
 
 # Learning surface mount soldering
+
 ![0603 surface mount resistor](../photos/surfaceMountTiny.jpg)
+
 <!-- surface mount components are tiny -->
 
 # Solder paste
-![solder paste](../photos/solderPasteOnBoard.jpg)
-*solder paste applied to a board*
 <!-- so we thought it would be good to use solder paste a hot air gun. You apply the solder paste using a stencil, you end up with sticky paste just on the pads, and then you stick your component into the paste and heat it up with a hot air gun. Easy! -->
+![solder paste](../photos/solderPasteOnBoard.jpg)
 
 # Solder paste
-![solder paste melted](../photos/solderPasteMeltedMacro.jpg)
-*surface mount components soldered with solder paste*
 <!-- After you apply the hot air gun, you get something like this, which looks fine... Except when we tested the board, it didn't work. We seemed to have a lot of bad solder joints. In trying to find the bad joints, I took the board under the microscope, and then I figured out why... -->
+![surface mount components soldered with solder paste](../photos/solderPasteMeltedMacro.jpg)
 
 # Solder paste
-![solder 10x](../photos/solderPasteNotMelted.jpg)
-*Solder paste under the microscope*
 <!-- This is what solder paste looks like under the microscope. It's actually a bunch of little beads of solder, held together by paste. -->
+![Solder paste under the microscope](../photos/solderPasteNotMelted.jpg)
 
 # Solder paste
-![solder paste joint OK](../photos/solderPasteJointHot.jpg)
-*solder paste joint: OK*
 <!-- Some joints look like this - these are OK. -->
+![solder paste joint: OK](../photos/solderPasteJointHot.jpg)
 
 # Solder paste
-![solder paste joint cold](../photos/solderPasteJointCold.jpg)
-*solder paste joint: cold solder*
 <!-- But some look like this. Does this conduct electricity? Maybe. Probably not reliably. I found it really hard to tell which joints were OK. So, new plan: -->
+![solder paste joint: cold solder](../photos/solderPasteJointCold.jpg)
 
 # Soldering using a dissection scope
-![soldering under scope](../photos/aceSolderingScope.jpg)
-*using a microscope for soldering*
 <!-- Use a microscope and hand-solder -->
+![using a microscope for soldering](../photos/aceSolderingScope.jpg)
 
 # Hand-soldering surface mount
 - The job of a solder joint is to conduct electricity, not to look pretty
-![solder joint ugly](../photos/uglyHandSolder.jpg)
-*ugly, but works*
 <!-- Using this method does not result in pretty solder joints. But the job of a solder joint is to conduct electricity, not to look pretty. -->
 
+![ugly, but works](../photos/uglyHandSolder.jpg)
+
 # Hand-soldering surface mount
-![hand-soldered 0201](../photos/activeElectrodeC1micro.jpg)
-*hand-soldered 0201 capacitor*
 <!-- You can even do an 0201 package - I refer to these as breathably small components. -->
+![hand-soldered 0201 capacitor](../photos/activeElectrodeC1micro.jpg)
 
 # Fixing misteaks
 ![rotated part](../photos/q10Wrong_unannotated.jpg)
@@ -146,25 +139,22 @@ We felt like our first board had too much noise for what we wanted to do, so in 
 
 # Fixing mistakes
 - You will make mistakes. You will be able to fix them.
-![rotated part](../photos/rotatedPart.jpg)
-*rotated Q10*
 <!-- So we just picked it up, rotated it, and stuck it back down. -->
 
+![rotated Q10](../photos/rotatedPart.jpg)
+
 # Fixing mistakes
-![rotated Q1-Q2](../photos/Q1-Q2.jpg)
-*flipped Q1-Q2*
 <!-- But that wasn't the worst error on this board - Q1-Q2 had pin 1 and 2 reversed. This was my solution - turn the component 180 degrees and greenwire pin 3 to its pad. We also needed to add a couple resistors that we forgot. -->
+![flipped Q1-Q2](../photos/Q1-Q2.jpg)
 
 # Fixing mistakes
-![cut traces](../photos/cutTrace.jpg)
-*cut traces*
 <!-- So what if you put a trace where you shouldn't have one? Well, you can just get a razor blade and cut it... provided you have a two-layer board. Or you can try lifting the foot of the IC up off the pad... -->
+![cut traces](../photos/cutTrace.jpg)
 
 # Fixing mistakes
-![broken-pin-green-wire](../photos/kms15-shield-broken-pin-GreenwireZoomOut.jpg)
-*green wire into the chip*
 <!-- And if you accidentally break off the foot while doing that... then you can just dremel into the chip itself, and hook the wire up straight to the chip. This is Kendrick's work, by the way. The problem was that PWRDWN and RESET should have been tied HIGH not LOW. D'oh! (https://github.com/OpenElectronicsLab/OpenHardwareExG_Shield/commit/507f61efbbbc3e7b2749c49335f21cd2c08a47c7)
 -->
+![green wire into the chip](../photos/kms15-shield-broken-pin-GreenwireZoomOut.jpg)
 
 
 
