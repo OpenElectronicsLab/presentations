@@ -48,16 +48,18 @@
 - Arduino-type boards and tools lower the barrier to entry
 
 # Arduino build environment
-- Picture
+![arduino-build-screenshot.png](../photos/arduino-build-screenshot.png)
 
-# KiCAD
-- schematic picture
-- KICAD PCB
-- Bare PCB
-- Populated PCB
+# KiCAD eeschema
+![kicad-eeschema-screenshot.png](../photos/kicad-eeschema-screenshot.png)
+
+# KICAD PCB
+![kicad-pcbnew-screenshot.png](../photos/kicad-pcbnew-screenshot.png)
+
+# Populated PCB
 
 # OpenSCAD
-- Picture
+![openscad-screenshot.png](../photos/openscad-screenshot.png)
 
 <!-- pass floor to Ace -->
 <!--
