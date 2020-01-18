@@ -79,14 +79,14 @@ learned a lot along the way
 one of the things was safety
 -->
 # Learning surface mount soldering
-<!-- ![2012 board](../photos/REV0CHIP) -->
+![2012 board](../photos/REV0CHIP.jpg)
 *rev0: through-hole except the chip*
 <!-- our first board was through-hole soldered, except the chip. -->
 
 # Learning surface mount soldering
 - "Pin sweep" method of soldering ICs
 - I learned it by watching YouTube!
-<!-- ![YouTube](../photos/youTubeSolderICs.jpg) -->
+![YouTube](../photos/youTubeSolderICs.jpg)
 <!-- At first we were intimidated by the tiny feet, but after watching some YouTube videos we were willing to give it a try - and it worked!
 We felt like our first board had too much noise for what we wanted to do, so in our second design we focused on reducing noise - and that meant making the leap to all surface-mount components. -->
 
@@ -137,18 +137,26 @@ We felt like our first board had too much noise for what we wanted to do, so in 
 <!-- You can even do an 0201 package - I refer to these as breathably small components. -->
 
 # Fixing misteaks
-- You will make mistakes. You will be able to fix them.
-<!-- ![rotated part](../photos/rotatedPart) -->
-*rotated Q*
-<!-- One thing a hot air gun is good for is fixing mistakes. And you will make mistakes. That's OK, you'll also fix them. In this case, we used the wrong footprint for the component that we chose. The pads are G-S-D, while the feet are D-G-S. So we just picked it up, rotated it, and stuck it back down. -->
+![rotated part](../photos/q10Wrong_unannotated)
+<!-- One thing that is really good about learning to work with surface mount is that you learn that you don't have to be afraid of mistakes. And you will make mistakes - especially if you're working in the evenings and weekends like we do, sometimes with long breaks between. -->
+
+# Fixing misteaks
+![rotated part](../photos/q10Wrong_annotated)
+<!-- The problem here was we got the wrong footprint: The pads are DGS, the feet are GSD -->
 
 # Fixing mistakes
-<!-- ![rotated Q1-Q2](../photos/Q1-Q2) -->
+- You will make mistakes. You will be able to fix them.
+![rotated part](../photos/rotatedPart)
+*rotated Q10*
+<!-- So we just picked it up, rotated it, and stuck it back down. -->
+
+# Fixing mistakes
+![rotated Q1-Q2](../photos/Q1-Q2)
 *flipped Q1-Q2*
 <!-- But that wasn't the worst error on this board - Q1-Q2 had pin 1 and 2 reversed. This was my solution - turn the component 180 degrees and greenwire pin 3 to its pad. We also needed to add a couple resistors that we forgot. -->
 
 # Fixing mistakes
-<!-- ![cut traces](../photos/cutTrace) -->
+![cut traces](../photos/cutTrace)
 *cut traces*
 <!-- So what if you put a trace where you shouldn't have one? Well, you can just get a razor blade and cut it... provided you have a two-layer board. Or you can try lifting the foot of the IC up off the pad... -->
 
