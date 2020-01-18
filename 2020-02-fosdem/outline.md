@@ -1,7 +1,6 @@
-% OpenElectronicsLab: Our Journey
+% Designing Hardware, Journey from Novice to Not-Bad
 % Ace Medlock, Kendrick Shaw, Eric Herman
 % 2020-02-01
-
 # OpenElectronicsLab
 <!-- https://rmarkdown.rstudio.com/authoring_pandoc_markdown.html%23raw-tex#presentations -->
 ![Eric Herman, Kendrick Shaw, Ace Medlock](../photos/openElectronicsLab_groupPhoto.jpg)
@@ -9,11 +8,11 @@
 # ADS1290 breakout
 ![2012 board](../photos/eeg-mouse_rev_0.0-DSC00681.jpg){ width=50% }
 
- - through-hole with 1 64pin QFP
- - 2011-11-26 begin desgin
- - 2012-01-23 boards arrive
-     - populated 2012 rev0 board
- - 2012-03-04 reading data
+- through-hole with 1 64pin QFP
+- 2011-11-26 begin desgin
+- 2012-01-23 boards arrive
+<!-- populated 2012 rev0 board -->
+- 2012-03-04 reading data
 
 [https://github.com/OpenElectronicsLab/ads1298-breakout](https://github.com/OpenElectronicsLab/ads1298-breakout)
 
@@ -42,11 +41,11 @@
 	- EC medical device regulation is currently changing (2020) and we don't really know the process yet
 	- Need to design for safety from the start: Plan to do a ground-up redesign with eye on certification once we're happy with the prototype
 
+[https://github.com/OpenElectronicsLab/OpenHardwareHolterMonitor](https://github.com/OpenElectronicsLab/OpenHardwareHolterMonitor)
+
 # Many excellent FOSS tools to support hardware hackers
 - for both hardware and firmware
 - Arduino-type boards and tools lower the barrier to entry
-
-[https://github.com/OpenElectronicsLab/OpenHardwareHolterMonitor](https://github.com/OpenElectronicsLab/OpenHardwareHolterMonitor)
 
 # KiCAD eeschema
 ![kicad-eeschema-screenshot.png](../photos/kicad-eeschema-screenshot.png)
@@ -170,7 +169,7 @@ We felt like our first board had too much noise for what we wanted to do, so in 
 # Fixing mistakes
 <!-- So what if you put a trace where you shouldn't have one? Well, you can just get a razor blade and cut it... provided you have a two-layer board. Or you can try lifting the foot of the IC up off the pad... -->
 
-![cut traces](../photos/cutTrace.jpg)
+![cut traces](../photos/cutTrace.jpg){ width=90% }
 
 # Fixing mistakes
 <!-- And if you accidentally break off the foot while doing that... then you can just dremel into the chip itself, and hook the wire up straight to the chip. This is Kendrick's work, by the way. The problem was that PWRDWN and RESET should have been tied HIGH not LOW. D'oh! (https://github.com/OpenElectronicsLab/OpenHardwareExG_Shield/commit/507f61efbbbc3e7b2749c49335f21cd2c08a47c7)
