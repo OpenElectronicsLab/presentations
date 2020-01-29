@@ -191,17 +191,68 @@ https://en.wikipedia.org/wiki/Goggles#/media/File:Your_Quota_Two_eyes_that_see_P
 
 <!-- Ace hands floor to KMS -->
 
-# General concepts
-- What could go wrong?
-- How serious is it
-- How likely is it
-- Risk = severity * probability
-- Iterate design until risk is acceptable
-  - freeclimbing
-  <!-- moderate levels of risk more acceptable for yourself -->
-  <!-- freeclimbing photo, not safe, but that can be an okay choice -->
-  - Sometimes a high level of risk is acceptable
-    - e.g. Defibrillator
+<!-- Safety is important, especially if you're connecting things directly to the human body, but also for many other fun things like working with high voltages or many interesting chemicals. Usually the most important step in doing things safely is taking a moment to think about the risks, so I wanted to briefly talk about this process in case it is useful for some of your other projects. -->
+
+# What could go wrong?
+
+- User error
+- Spills
+- Power surges
+- Hacking
+- Drops/falls
+- etc.
+
+<!-- The first thing you need to ask yourself is what could possibly go wrong. Usually this is a pretty long list; for example for a medical device it might include lightning strikes to power lines, hacking, spills, and many other things. -->
+
+# How serious is it
+
+![Paper cut vs nuclear explosion](../photos/severity.png)
+
+<!-- The next question is how much harm each event could cause.  For example, having your music player stutter a few times during a song is unlikely to cause any lasting injury. On the other hand, if your artificial heart develops a leak, the patient could easily bleed to death before it was noticed.  -->
+
+# How likely is it
+
+Examples:
+
+ - Very likely:
+    - user forgets to turn device off overnight
+    - device dropped from 1 meter above ground
+ - Very unlikely:
+    - user starves while using device because they forgot to eat
+    - device dropped out of airplane
+
+<!-- The next question to ask is how likely each of these events are.  For example, for most items it is possible that they could be dropped out of an airplane and hit someone below, but it's not a very likely event. Spilling blood or IV fluid on a piece of medical equipment is much more likely. -->
+
+# Risk
+
+Risk = Severity of harm * Probability of harm
+
+(e.g. ISO 14971)
+
+<!-- You then need to assess the actual risk each possible event represents, and decide whether the risk is acceptable.  In most standard workflows risk is defined as probability of harm times severity of harm; obviously this is a heuristic, but it's a reasonable one for getting started.  For example, your blender might kill someone if dropped out of an airplane, but that's unlikely enough to happen that the total risk may still be acceptable.  On the other hand, a sharp edge on the enclosure of your device might only cause a few scrapes and bruises, but it might be likely enough to do so that it's worth spending some time sanding down.  -->
+
+# Acceptable risk
+
+Acceptable risk varies by circumstance
+
+![free climber [^Free_climbing_credit]](../photos/freeclimbing.jpg){ width=80% }
+
+[^Free_climbing_credit]: Image by Heinz Hummel from Pixabay, Pixabay license
+<!-- source https://pixabay.com/photos/climb-free-climbing-sun-rock-2296308/ -->
+
+<!-- What is acceptable is ultimately a judgment call, and varies by circumstance. Risking your own like doing something like free climbing can be OK, as long as you understand the risks you're taking.  Similarly a defibrillator is a very dangerous device that is designed to stop the heart, but when someone's heart is not beating properly it can still be the safest option. -->
+
+# Mitigation
+
+Decrease the risk of the event
+
+- example: remove internet connectivity from a device to make it less likely to be hacked
+
+Decrease the severity of the event
+
+- example: add a disconnection alarm to a ventilator so it fails loudly rather than quietly if it is accidentally disconnected from the patient
+
+<!-- if the risk is not acceptable, you next look for ways to either reduce the severity of harm or probability of harm, and repeat this process until the risk is acceptable. -->
 
 # Risk of electrical shock
 - Small currents can be dangerous when crossing the heart

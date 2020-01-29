@@ -4,12 +4,12 @@
 # $* : wildcard matched part
 
 VIEWER=evince
-GENERATED_IMAGES=../photos/Creepage_vs_clearance.png
+GENERATED_IMAGES=../photos/Creepage_vs_clearance.png ../photos/severity.png
 
 default: pdf
 
 pdf: clean outline.md $(GENERATED_IMAGES)
-	pandoc --latex-engine=xelatex outline.md -o outline.pdf -t beamer
+	pandoc --pdf-engine=xelatex outline.md -o outline.pdf -t beamer
 
 %.png : %.svg
 	inkscape --export-png $@ --export-dpi=300 $<
