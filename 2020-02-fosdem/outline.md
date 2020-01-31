@@ -3,10 +3,10 @@
 % 2020-02-01
 # OpenElectronicsLab
 <!-- https://rmarkdown.rstudio.com/authoring_pandoc_markdown.html%23raw-tex#presentations -->
-![Eric Herman, Kendrick Shaw, Ace Medlock](../photos/openElectronicsLab_groupPhoto.jpg)
+![Eric Herman, Kendrick Shaw, Ace Medlock](../photos/openElectronicsLab_groupPhoto_small.jpg)
 
 # ADS1290 breakout
-![2012 board](../photos/eeg-mouse_rev_0.0-DSC00681.jpg){ width=50% }
+![2012 board](../photos/eeg-mouse_rev_0.0-DSC00681_small.jpg){ width=50% }
 
 - through-hole with 1 64pin QFP
 - 2011-11-26 begin desgin
@@ -17,7 +17,7 @@
 [https://github.com/OpenElectronicsLab/ads1298-breakout](https://github.com/OpenElectronicsLab/ads1298-breakout)
 
 # ExG Version 1
-![OpenHardwareExG in the case](../photos/OpenHardwareExG-rev1-in-case.800.jpg){ width=50% }
+![OpenHardwareExG in the case](../photos/OpenHardwareExG-rev1-in-case.800_small.jpg){ width=50% }
 
 - 3 boards stacked, but testing of base-board hard
 - example usage: [http://openelectronicslab.github.io/eeg-mouse/](http://openelectronicslab.github.io/eeg-mouse/)
@@ -25,7 +25,7 @@
 [https://github.com/OpenElectronicsLab/OpenHardwareExG](https://github.com/OpenElectronicsLab/OpenHardwareExG)
 
 # ExG Shield
-![OpenHardwareExG Shield](../photos/openhardware-exg-shield.jpg){ width=50% }
+![OpenHardwareExG Shield](../photos/openhardware-exg-shield_small.jpg){ width=50% }
 
 - designed testing, cheaper and easier for others
 - made some errors and three different revs
@@ -54,7 +54,7 @@
 ![kicad-pcbnew-screenshot.png](../photos/kicad-pcbnew-screenshot.png)
 
 # Populated PCB
-![populated-holtermonitor.jpg](../photos/populated-holtermonitor.jpg)
+![populated-holtermonitor_small.jpg](../photos/populated-holtermonitor_small.jpg)
 
 # Arduino build environment
 ![arduino-build-screenshot.png](../photos/arduino-build-screenshot.png)
@@ -65,116 +65,116 @@
 <!-- pass floor to Ace -->
 
 # Learning surface mount soldering
-![rev0: through-hole except the chip](../photos/REV0CHIP.jpg)
+![rev0: through-hole except the chip](../photos/REV0CHIP_small.jpg)
 
 # Learning surface mount soldering
 - "Pin sweep" method of soldering ICs
 - I learned it by watching YouTube!
 <!-- At first we were intimidated by the tiny feet, but after watching some YouTube videos we were willing to give it a try - and it worked!
 We felt like our first board had too much noise for what we wanted to do, so in our second design we focused on reducing noise - and that meant making the leap to all surface-mount components. -->
-![YouTube](../photos/youTubeSolderICs.jpg)
+![YouTube](../photos/youTubeSolderICs_small.jpg)
 
 # Learning surface mount soldering
 
-![0603 surface mount resistor](../photos/surfaceMountTiny.jpg)
+![0603 surface mount resistor](../photos/surfaceMountTiny_small.jpg)
 
 <!-- surface mount components are tiny -->
 
 # Solder paste
 <!-- so we thought it would be good to use solder paste a hot air gun. You apply the solder paste using a stencil, you end up with sticky paste just on the pads, and then you stick your component into the paste and heat it up with a hot air gun. Easy! -->
-![solder paste](../photos/solderPasteOnBoard.jpg)
+![solder paste](../photos/solderPasteOnBoard_small.jpg)
 
 # Solder paste
 <!-- After you apply the hot air gun, you get something like this, which looks fine... Except when we tested the board, it didn't work. We seemed to have a lot of bad solder joints. In trying to find the bad joints, I took the board under the microscope, and then I figured out why... -->
-![surface mount components soldered with solder paste](../photos/solderPasteMeltedMacro.jpg)
+![surface mount components soldered with solder paste](../photos/solderPasteMeltedMacro_small.jpg)
 
 # Solder paste
 <!-- This is what solder paste looks like under the microscope. It's actually a bunch of little beads of solder, held together by paste. -->
-![Solder paste under the microscope](../photos/solderPasteNotMelted.jpg)
+![Solder paste under the microscope](../photos/solderPasteNotMelted_small.jpg)
 
 # Solder paste
 <!-- Some joints look like this - these are OK. -->
-![solder paste joint: OK](../photos/solderPasteJointHot.jpg)
+![solder paste joint: OK](../photos/solderPasteJointHot_small.jpg)
 
 # Solder paste
 <!-- But some look like this. Does this conduct electricity? Maybe. Probably not reliably. I found it really hard to tell which joints were OK. So, new plan: -->
-![solder paste joint: cold solder](../photos/solderPasteJointCold.jpg)
+![solder paste joint: cold solder](../photos/solderPasteJointCold_small.jpg)
 
 # Soldering using a dissection scope
 <!-- Use a microscope and hand-solder -->
-![using a microscope for soldering](../photos/aceSolderingScope.jpg)
+![using a microscope for soldering](../photos/aceSolderingScope_small.jpg)
 
 # Hand-soldering surface mount
 <!-- The way I usually do it is to position the component, then get a little glob of solder on the tip of the iron. -->
-![hand solder 01](../photos/handSolder01.jpg)
+![hand solder 01](../photos/handSolder01_small.jpg)
 
 # Hand-soldering surface mount
 <!-- Then use the glob to conduct the heat between the iron, pad, and component -->
-![hand solder 02](../photos/handSolder02.jpg)
+![hand solder 02](../photos/handSolder02_small.jpg)
 
 # Hand-soldering surface mount
 <!-- Apply the solder -->
-![hand solder 03](../photos/handSolder03.jpg)
+![hand solder 03](../photos/handSolder03_small.jpg)
 
 # Hand-soldering surface mount
 <!-- Here I'm cheating and using the solder itself to hold down the component while I pull the iron away, so it doesn't yank the component with it. -->
-![hand solder 04](../photos/handSolder04.jpg)
+![hand solder 04](../photos/handSolder04_small.jpg)
 
 # Hand-soldering surface mount
 <!-- and there we are -->
-![hand solder 05](../photos/handSolder05.jpg)
+![hand solder 05](../photos/handSolder05_small.jpg)
 
 # Hand-soldering surface mount
 <!-- Here's the other side. -->
-![hand solder 06](../photos/handSolder06.jpg)
+![hand solder 06](../photos/handSolder06_small.jpg)
 
 # Hand-soldering surface mount
-![hand solder 07](../photos/handSolder07.jpg)
+![hand solder 07](../photos/handSolder07_small.jpg)
 
 # Hand-soldering surface mount
-![hand solder 08](../photos/handSolder08.jpg)
+![hand solder 08](../photos/handSolder08_small.jpg)
 
 # Hand-soldering surface mount
 <!-- This one's not quite as pretty. -->
-![hand solder 09](../photos/handSolder09.jpg)
+![hand solder 09](../photos/handSolder09_small.jpg)
 
 # Hand-soldering surface mount
 - The job of a solder joint is to conduct electricity, not to look pretty
 <!-- Using this method does not result in pretty solder joints. But the job of a solder joint is to conduct electricity, not to look pretty. -->
 
-![ugly, but works](../photos/uglyHandSolder.jpg){ width=75% }
+![ugly, but works](../photos/uglyHandSolder_small.jpg){ width=75% }
 
 # Hand-soldering surface mount
 <!-- You can even do an 0201 package - I refer to these as breathably small components. -->
-![hand-soldered 0201 capacitor](../photos/activeElectrodeC1micro.jpg)
+![hand-soldered 0201 capacitor](../photos/activeElectrodeC1micro_small.jpg)
 
 # Fixing misteaks
-![rotated part](../photos/q10Wrong_unannotated.jpg)
+![rotated part](../photos/q10Wrong_unannotated_small.jpg)
 <!-- One thing that is really good about learning to work with surface mount is that you learn that you don't have to be afraid of mistakes. And you will make mistakes - especially if you're working in the evenings and weekends like we do, sometimes with long breaks between. -->
 
 # Fixing misteaks
-![rotated part](../photos/q10Wrong_annotated.jpg)
+![rotated part](../photos/q10Wrong_annotated_small.jpg)
 <!-- The problem here was we got the wrong footprint: The pads are DGS, the feet are GSD -->
 
 # Fixing mistakes
 - You will make mistakes. You will be able to fix them.
 <!-- So we just picked it up, rotated it, and stuck it back down. -->
 
-![rotated Q10](../photos/rotatedPart.jpg){ width=75% }
+![rotated Q10](../photos/rotatedPart_small.jpg){ width=75% }
 
 # Fixing mistakes
 <!-- But that wasn't the worst error on this board - Q1-Q2 had pin 1 and 2 reversed. This was my solution - turn the component 180 degrees and greenwire pin 3 to its pad. We also needed to add a couple resistors that we forgot. -->
-![flipped Q1-Q2](../photos/Q1-Q2.jpg)
+![flipped Q1-Q2](../photos/Q1-Q2_small.jpg)
 
 # Fixing mistakes
 <!-- So what if you put a trace where you shouldn't have one? Well, you can just get a razor blade and cut it... provided you have a two-layer board. Or you can try lifting the foot of the IC up off the pad... -->
 
-![cut traces](../photos/cutTrace.jpg){ width=90% }
+![cut traces](../photos/cutTrace_small.jpg){ width=90% }
 
 # Fixing mistakes
 <!-- And if you accidentally break off the foot while doing that... then you can just dremel into the chip itself, and hook the wire up straight to the chip. This is Kendrick's work, by the way. The problem was that PWRDWN and RESET should have been tied HIGH not LOW. D'oh! (https://github.com/OpenElectronicsLab/OpenHardwareExG_Shield/commit/507f61efbbbc3e7b2749c49335f21cd2c08a47c7)
 -->
-![green wire into the chip](../photos/kms15-shield-broken-pin-GreenwireZoomOut.jpg)
+![green wire into the chip](../photos/kms15-shield-broken-pin-GreenwireZoomOut_small.jpg)
 
 <!-- We've learned a lot along the way; one of the things we've learned about is safety, which Kendrick will talk to you about.
 -->
@@ -235,7 +235,7 @@ Risk = Severity of harm * Probability of harm
 
 Acceptable risk varies by circumstance
 
-![free climber [^Free_climbing_credit]](../photos/freeclimbing.jpg){ width=80% }
+![free climber [^Free_climbing_credit]](../photos/freeclimbing_small.jpg){ width=80% }
 
 [^Free_climbing_credit]: Image by Heinz Hummel from Pixabay, Pixabay license
 <!-- source https://pixabay.com/photos/climb-free-climbing-sun-rock-2296308/ -->
