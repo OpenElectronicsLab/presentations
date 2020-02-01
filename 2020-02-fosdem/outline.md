@@ -235,7 +235,7 @@ Risk = Severity of harm * Probability of harm
 
 Acceptable risk varies by circumstance
 
-![free climber [^Free_climbing_credit]](../photos/freeclimbing_small.jpg){ width=80% }
+![free climber [^Free_climbing_credit]](../photos/freeclimbing.jpg){ width=80% }
 
 [^Free_climbing_credit]: Image by Heinz Hummel from Pixabay, Pixabay license
 <!-- source https://pixabay.com/photos/climb-free-climbing-sun-rock-2296308/ -->

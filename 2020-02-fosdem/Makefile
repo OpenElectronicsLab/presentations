@@ -38,8 +38,7 @@ GENERATED_IMAGES=../photos/Creepage_vs_clearance.png ../photos/severity.png \
 	../photos/rotatedPart_small.jpg \
 	../photos/Q1-Q2_small.jpg \
 	../photos/cutTrace_small.jpg \
-	../photos/kms15-shield-broken-pin-GreenwireZoomOut_small.jpg \
-	../photos/freeclimbing_small.jpg
+	../photos/kms15-shield-broken-pin-GreenwireZoomOut_small.jpg
 
 
 default: pdf
