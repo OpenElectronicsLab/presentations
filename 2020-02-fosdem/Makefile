@@ -5,6 +5,9 @@
 
 VIEWER=evince
 GENERATED_IMAGES=../photos/Creepage_vs_clearance.png ../photos/severity.png \
+	../photos/shock_risk_intradevice.png \
+	../photos/shock_risk_interdevice.png \
+	../photos/shock_risk_device_ground.png \
 	../photos/openElectronicsLab_groupPhoto_small.jpg \
 	../photos/eeg-mouse_rev_0.0-DSC00681_small.jpg \
 	../photos/OpenHardwareExG-rev1-in-case.800_small.jpg \

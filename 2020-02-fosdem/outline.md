@@ -254,16 +254,30 @@ Decrease the severity of the event
 
 <!-- if the risk is not acceptable, you next look for ways to either reduce the severity of harm or probability of harm, and repeat this process until the risk is acceptable. -->
 
-# Risk of electrical shock
+# Example: Risk of electrical shock
 - Small currents can be dangerous when crossing the heart
 - Current rather than voltage
     - Pacemaker voltages (~2 volts)
     - Minimum fibrilation currents
+        - 10s of milliamps through skin
+        - 10s of microamps at the heart
     - Resistances can be very low in a medical context
       - central lines, surgery, etc.
-<!-- MAYBE Figure with patient and heart in circuit -->
+- Probability may be low, but severity can be high
 
-# Isolation
+# Risk of shock between electrodes
+
+![Intradevice shock risk](../photos/shock_risk_intradevice.png)
+
+# Risk of shock between device and ground
+
+![Device-ground shock risk](../photos/shock_risk_device_ground.png)
+
+# Risk of shock between devices
+
+![Interdevice shock risk](../photos/shock_risk_interdevice.png)
+
+# Example Mitigation: Isolation
 - Batteries (Safety Extra Low Voltage, or SELV)
     - e.g.: unplugged laptop
 - Creepage and clearance
