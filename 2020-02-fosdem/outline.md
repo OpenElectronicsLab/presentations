@@ -48,7 +48,7 @@
 - Arduino-type boards and tools lower the barrier to entry
 
 # KiCAD eeschema
-![kicad-eeschema-screenshot.png](../photos/kicad-eeschema-screenshot.png)
+![kicad-eeschema-screenshot.png](../photos/kicad-eeschema-screenshot.png){ width=90% }
 
 # KICAD PCB
 ![kicad-pcbnew-screenshot.png](../photos/kicad-pcbnew-screenshot.png)
@@ -297,6 +297,7 @@ Enclosure          100 $\mu$A      100 $\mu$A       100 $\mu$A
 Patient            100 $\mu$A      100 $\mu$A        10 $\mu$A
 --------------------------------------------------------------------
 
+- Note that these are very low currents
 - Can only be 2-5 times larger even if component fails
 <!-- MAYBE Isolated, body float, cardiac float symbols -->
 
